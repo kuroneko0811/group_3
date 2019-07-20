@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>MyPage</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/mypage.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slideshow.js"></script>
+<script>
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slideshow({
+		touch		: true,
+		touchDistance : '80',
+		bgImage	  : false,
+		autoSlide	: true,
+		effect	   : 'slide',
+		repeat	   : true,
+		easing	   : 'swing',
+		interval	 : 3000,
+		duration	 : 500,
+		imgHoverStop : true,
+		navHoverStop : true,
+		navImg	   : false,
+		navImgCustom : false,
+		navImgSuffix : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
+</script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="contents">
+	<div id="sub">
+		<header>
+			<h1><a href="index.html">限界高専生
+			</a></h1>
+			<p class="summary">
+			マイページ
+			</p>
+		</header>
+		<nav>
+			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="index.html">掲示板</a></li>
+				<li><a href="index.html">チャットルーム</a></li>
+				<li><a href="index.html">マイページ</a></li>
+			</ul>
+		</nav>
+	</div><!-- /#sub -->
+	<div id="main">
+		<!-- <div class="slide">
+			<ul class="slideInner">
+				<li><a href="index.html"><img src="images/genkai3.jpg" alt=""></a></li>
+				<li><a href="index.html"><img src="images/genkai4.png" alt=""></a></li>
+				<li><a href="index.html"><img src="images/genkai.png" alt=""></a></li>
+			</ul>
+			<div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+			<div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+			<div class="controlNav"></div>
+        </div><!-- /.slide -->
+        <div class="my-plofile">
+            <img src="images/chiba.jpg" alt="">
+            <ul>
+                <li>MYNAME</li>
+                <li>MYID</li>
+                <li>MYPASSWORD</li>
+            </ul>
+            <a class="my-plofile-change" href="">変更する</a>
+        </div>
+
+		<h2>投稿履歴</h2>
+		<dl class="info">
+		   <dt><span>2019-07-11</span></dt>
+		   <dd>
+				 進捗だめです
+		   </dd>
+		   <dt><span>2019-07-11</span></dt>
+		   <dd>
+				にゃ～ん
+		   </dd>
+		</dl>
+		<!--<div class="staff">
+			<h3>掲示板</h3>
+			<ul>
+				<li>
+				<img src="images/chiba.jpg" alt="">
+				<h4>スレッド１</h4>
+				<p>スレッド１です</p>
+				</li>
+				<li>
+				<img src="images/sorayan.jpg" alt="">
+				<h4>スレッド２</h4>
+				<p>スレッド２です</p>
+				</li>
+				<li>
+				<img src="images/chiba2.jpg" alt="">
+				<h4>スレッド３</h4>
+				<p>スレッド３です</p>
+				</li>
+				 <li>
+				<img src="images/sorayan2.jpg" alt="">
+				<h4>スレッド４</h4>
+				<p>スレッド４です</p>
+				</li>
+			</ul>
+			<p class="textR"><a href="index.html">&raquo;もっと見る</a></p>
+		</div>--><!-- /.staff -->
+	</div><!-- /#main -->
+</div><!-- /#contents -->
+
+<footer>
+	<div class="footmenu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="index.html">掲示板</a></li>
+			<li><a href="index.html">チャットルーム</a></li>
+			<li><a href="index.html">マイページ</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+</footer>
+
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
